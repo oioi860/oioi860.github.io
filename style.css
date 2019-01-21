@@ -1,5 +1,27 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto');
-.pp{
-	font-family: 'Roboto', sans-serif;
+a{
+	text-decoration: none;
+}
+a:link{
+	color: white;
+}
+a:visited{
 	color: red;
+}
+ul {
+  margin: 0;
+  list-style: none;
+  padding: auto;
+  overflow: auto;
+  display: flex;
+  }
+  li {
+  float: left;
+  width: auto;
+}
+ul li{
+	flex-grow:1;
+}
+nav{
+	height: auto;
+	background: black;
 }
