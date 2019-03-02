@@ -149,7 +149,7 @@ a{
 	text-decoration: none;
 	color: black;
 }
-a:hover{
+header a:hover{
 	background-color: black;
 	color: white;
 	height: 50px;
