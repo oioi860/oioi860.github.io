@@ -1,0 +1,172 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background-image: url("img/bg.jpg");
+}
+.dws-wrapper{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.boxImg{
+	background: white;
+	position: relative;
+	text-align: center;
+	font-family: 'Arimo', sans-serif;
+	width:400px;
+	height:535px;
+	border:5px outset #b7bab7;
+	overflow: hidden;
+}
+.boxImg img{
+	height: 535px;
+	transition: .5s;
+}
+.container{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.container:before, .container:after{
+	content:"";
+	width: 300px;
+	height: 300px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: black;
+	opacity: 0;
+	transition: 3s;
+}
+.text{
+	position: absolute;
+	top: 20%;
+	color: white;
+	text-align: center;
+	z-index: 10;
+}
+.text h1{
+	margin-bottom: 20px;
+	font-size: 30px;
+	transform: scale(0);
+	transition: .5s;
+}
+.text p{
+	font-size: 18px;
+	margin: 0 100px;
+	text-align: justify;
+	transform: scale(1);
+	transition: .5s;
+	opacity: 0;
+}
+a.bt{
+	position: absolute;
+	top: 100%;
+	left: 37%;
+	color: white;
+	text-decoration: none;
+	text-transform: uppercase;
+	border: 2px solid white;
+	padding: 10px 30px;
+	border-radius: 8px;
+	opacity: 0;
+	transition: .2s ease-in-out;
+	overflow: hidden;
+}
+a.bt:before{
+	content: '';
+	position: absolute;
+	top: -8px;
+	left: -75px;
+	height: 50px;
+	width: 50px;
+	background: linear-gradient(90deg,rgba(255,255,255,.1), rgba(255,255,255,.5));
+	transform: skewX(-45deg);
+}
+a.bt:hover::before{
+	left: 150px;
+	transition: .5s ease-in-out;
+}
+a.bt:active{
+	border: 2px solid #b3b3b3;
+}
+.boxImg:hover a.bt{
+	opacity: 1;
+	transition: .5s;
+}
+.boxImg:hover img{
+	transform: rotate(-30deg) scale(2);
+	filter: blur(2px);
+}
+.boxImg:hover .container::before{
+	transform: translateX(92%) rotate(45deg) scale(2);
+	transition: .5s;
+	opacity: .6;
+}
+.boxImg:hover .container::after{
+	transform: translateX(25%) rotate(45deg) scale(2);
+	transition: .5s;
+	opacity: .6;
+}
+.boxImg:hover .text h1{
+	transform: scale(1);	
+}
+.boxImg:hover .text p{
+	transform: scale(1);
+	opacity: 1;
+}
+.bixImg:hover{
+	border: 5px inset #b7bab7;
+}
+
+ol{
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: center;
+	padding: 0;
+	list-style: none;
+}
+li{
+	padding-top: 10px;
+	text-align: center;
+	background-color: white;
+	width: 200px;
+	height: 25px;
+	border:1px solid black;
+}
+li:hover{
+	background-color: black;
+	color: white;
+	height: 50px;
+	transition: .5s;
+}
+a{
+	text-decoration: none;
+	color: black;
+}
+header a:hover{
+	background-color: black;
+	color: white;
+	height: 50px;
+	transition: .5s;
+}
+.vk{
+	color: black;
+	display: inline-block;
+	margin-top: 800px;
+	border:2px solid black;
+	background-color: white;
+
+}
+button{
+	position: absolute;
+	margin-top: -35px;
+	margin-left: 360px;
+	height: 35px;
+	width: 50px;
+}
